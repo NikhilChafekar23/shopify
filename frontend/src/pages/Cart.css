@@ -1,0 +1,151 @@
+/* Cart.css */
+
+/* Main Cart page container */
+.cart-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: #F4F4F4; /* Light Gray Background */
+  border-radius: 10px;
+}
+
+/* Cart header */
+.cart-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2C3E50; /* Dark Blue-Gray */
+}
+
+/* Cart container */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05); /* Light Transparent Black */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-name {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #2C3E50; /* Dark Blue-Gray */
+}
+
+.cart-item-price {
+  font-size: 16px;
+  color: #555;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.quantity-btn {
+  background: #ddd;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.item-total-price {
+  font-weight: bold;
+  color: #333;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Remove Button - Red */
+.remove-btn {
+  background: #E74C3C; /* Bright Red */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-btn:hover {
+  background: #C0392B; /* Darker Red */
+}
+
+/* Buy Now Button - Warm Orange */
+.buy-now-btn {
+  background: #E67E22; /* Warm Orange */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buy-now-btn:hover {
+  background: #D35400; /* Darker Orange */
+}
+
+/* Cart Total Container */
+.cart-total-container {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.cart-total h3 {
+  font-weight: bold;
+  color: #2C3E50; /* Dark Blue-Gray */
+}
+
+/* Checkout Button */
+.checkout-btn {
+  background: #27AE60; /* Vibrant Green */
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.checkout-btn:hover {
+  background: #229954; /* Darker Green */
+}

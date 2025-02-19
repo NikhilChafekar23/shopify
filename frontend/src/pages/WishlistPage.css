@@ -1,0 +1,104 @@
+/* Wishlist Page */
+.wishlist-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #F4F4F4; /* Soft Gray Background */
+  border-radius: 10px;
+}
+
+/* Wishlist Container */
+.wishlist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Wishlist Item */
+.wishlist-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.05); /* Light Transparent Black */
+}
+
+.wishlist-item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.quantity-controls button {
+  background-color: #ddd;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Buttons */
+.wishlist-btn, .remove-btn, .buy-now-btn {
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Add to Cart Button - Vibrant Green */
+.wishlist-btn {
+  background-color: #27AE60; /* Vibrant Green */
+  color: white;
+}
+
+.wishlist-btn:hover {
+  background-color: #229954; /* Darker Green */
+}
+
+/* Remove Button - Bright Red */
+.remove-btn {
+  background-color: #E74C3C; /* Bright Red */
+  color: white;
+}
+
+.remove-btn:hover {
+  background-color: #C0392B; /* Darker Red */
+}
+
+/* Buy Now Button - Warm Orange */
+.buy-now-btn {
+  background-color: #E67E22; /* Warm Orange */
+  color: white;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.buy-now-btn:hover {
+  background-color: #D35400; /* Darker Orange */
+}
+
+/* Wishlist Total */
+.wishlist-total {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.05); /* Light Transparent Black */
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2C3E50; /* Dark Blue-Gray */
+}

@@ -1,0 +1,105 @@
+/* Signup Page Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F4F4; /* Soft Light Gray - Clean and Minimal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form Box Container */
+.container {
+    background: #ffffff; /* White Background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+    width: 350px;
+    text-align: center;
+    border: 2px solid #2C3E50; /* Dark Blue-Gray Border - Stylish */
+}
+
+/* Heading */
+h2 {
+    color: #2C3E50; /* Dark Blue-Gray */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+label {
+    text-align: left;
+    color: #2C3E50; /* Dark Blue-Gray */
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Input Fields */
+input {
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 2px solid #27AE60; /* Vibrant Green */
+    background: #ffffff;
+    color: #2C3E50; /* Dark Blue-Gray */
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect on input */
+input:focus {
+    border-color: #E67E22; /* Warm Orange */
+    box-shadow: 0 0 8px rgba(230, 126, 34, 0.5);
+}
+
+/* Placeholder Text */
+input::placeholder {
+    color: #2C3E50; /* Dark Blue-Gray */
+    opacity: 0.7;
+}
+
+/* Button Styling */
+button {
+    background-color: #27AE60; /* Vibrant Green */
+    color: #ffffff; /* White Text */
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(39, 174, 96, 0.3);
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #229954; /* Slightly Darker Green */
+    box-shadow: 0 6px 12px rgba(39, 174, 96, 0.4);
+}
+
+/* Error Message */
+.error-message {
+    color: #E74C3C; /* Bright Red - Attention Grabbing */
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}

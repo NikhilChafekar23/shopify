@@ -1,0 +1,127 @@
+/* styles.css */
+.products-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f4f7fc;
+  border-radius: 10px;
+}
+
+.products-container h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50; /* Dark Blue-Gray */
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50; /* Dark Blue-Gray */
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.product-card p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+  transform: scale(1.1);
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3498db;
+  margin-top: 10px;
+  display: block;
+}
+
+.product-card .buy-now {
+  background-color: #e67e22; /* Warm Orange */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.product-card .buy-now:hover {
+  background-color: #d35400;
+}
+
+.product-card .remove {
+  background-color: #e74c3c; /* Bright Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.product-card .remove:hover {
+  background-color: #c0392b;
+}
+
+.checkout-button {
+  background-color: #27ae60; /* Vibrant Green */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.checkout-button:hover {
+  background-color: #219150;
+}
