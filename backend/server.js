@@ -9,7 +9,7 @@ const authRoutes = require('./routes/authRoutes');
 require('dotenv').config();
 
 const app = express();
-const port = 3000; // Ensure this matches your frontend's API calls
+const port = process.env.PORT || 3000; // ✅ Use port from .env
 
 // ✅ Ensure `uploads/` directory exists
 const uploadDir = path.join(__dirname, 'uploads');
@@ -23,16 +23,12 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.error('❌ MongoDB Connection Error:', err));
 
 // Middleware
-app.use(cors({
-  origin: 'http://localhost:5173', // Update this to your frontend's URL
-  methods: 'GET,POST,PUT,DELETE',
-  allowedHeaders: 'Content-Type'
-}));
-app.use(express.json()); 
-app.use('/uploads', express.static('uploads')); 
+app.use(cors()); // ✅ Allow access from all origins
+app.use(express.json());
+app.use('/uploads', express.static('uploads'));
 
 // Routes
-app.use('/api/auth', authRoutes); 
+app.use('/api/auth', authRoutes);
 
 // ✅ Set up multer for image uploads
 const storage = multer.diskStorage({

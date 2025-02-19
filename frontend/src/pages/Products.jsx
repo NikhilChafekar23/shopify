@@ -4,7 +4,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch(`${import.meta.env.VITE_API_URL}/api/products`)
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error('Error fetching products:', error));
@@ -32,7 +32,7 @@ const Products = () => {
         ) : (
           products.map((product) => (
             <div key={product.id} style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '8px' }}>
-              <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
+              <img src={`${import.meta.env.VITE_API_URL}${product.imageUrl}`} alt={product.name} style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
               <h3>{product.name}</h3>
               <p>Price: Rs. {product.price}</p>
               <button onClick={() => addToWishlist(product)}>Add to Wishlist</button>

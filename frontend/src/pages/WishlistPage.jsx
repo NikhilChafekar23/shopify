@@ -56,7 +56,7 @@ const WishlistPage = () => {
               wishlistItems.map((item) => (
                 <div key={item.id || item._id} className="cart-item">
                   <img
-                    src={`http://localhost:3000${item.imageUrl}`}
+                    src={`${import.meta.env.VITE_API_URL}${item.imageUrl}`}
                     alt={item.name}
                     className="cart-item-image"
                     onError={(e) => {

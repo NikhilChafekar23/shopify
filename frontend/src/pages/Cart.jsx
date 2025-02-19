@@ -74,7 +74,7 @@ const Cart = () => {
             cartItems.map((item, index) => (
               <div key={item.id || index} className="cart-item">
                 <img
-                  src={`http://localhost:3000${item.imageUrl}`}
+                  src={`${import.meta.env.VITE_API_URL}${item.imageUrl}`}
                   alt={item.name}
                   className="cart-item-image"
                 />

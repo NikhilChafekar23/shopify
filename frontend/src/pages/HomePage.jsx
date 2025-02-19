@@ -14,7 +14,7 @@ const HomePage = () => {
   const [username, setUsername] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/products')
+    fetch(`${import.meta.env.VITE_API_URL}/api/products`)
       .then((response) => {
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
         return response.json();
@@ -73,7 +73,7 @@ const HomePage = () => {
           {filteredProducts.map((product) => (
             <div key={product._id} className="product-card">
               <img
-                src={`http://localhost:3000${product.imageUrl}`}
+                src={`${import.meta.env.VITE_API_URL}${product.imageUrl}`}
                 alt={product.name}
                 className="product-image"
               />
